@@ -16,7 +16,7 @@ const projection = d3.geoMercator()
 const path = d3.geoPath().projection(projection);
 
 // Load and draw the UK map
-d3.json("gb.json").then(function (uk) {
+d3.json("https://raw.githubusercontent.com/manuvats/D3Assignment/main/gb.json").then(function (uk) {
     // Draw the map
     console.log(uk);
     svg.selectAll("path")
@@ -80,7 +80,7 @@ function plotTowns(data, townCount) {
 }
 
 // Load the town data from a JSON file
-d3.json("townsdata.json").then(function (townData) {
+d3.json("http://34.38.72.236/Circles/Towns/100").then(function (townData) {
     const townCountInput = document.getElementById("townCount");
     let selectedTownCount = townCountInput.value;
     const sliderValue = document.getElementById("sliderValue");

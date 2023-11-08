@@ -1,1 +1,1 @@
-# D3Assignment
+Please open the index.html to view the project output. 
